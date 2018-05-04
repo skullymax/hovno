@@ -15,7 +15,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.user.setActivity(`Serving ${client.guilds.size} servers`);
+  client.user.setActivity(`/help | ${client.guilds.size} servers`);
 });
 
 function doMagic8BallVoodoo() {
