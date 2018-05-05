@@ -19,21 +19,21 @@ client.on("guildDelete", guild => {
 });
 
 function doMagic8BallVoodoo() {
-    var rand = ['davaguco:internet73',
-    'adamboerema@gmail.com:acb7311988',
-    'raziel.secur@gmail.com:z1x2q3c4',
-    'amikaysbokays@aol.com:meow2000',
-    'satch3l@gmail.com:sevamix',
-    'brandonp.pwns@yahoo.com:phung11',
-    'colovos.kevin@gmail.com:as506345',
-    'jackedwardshey@hotmail.co.uk:horseey12',
-    'halliemrizek@gmail.com:kaulitz2',
-    'charlielewisnz@gmail.com:11churchill',
-    'juldeleon19@gmail.com:angel555',
-    'loco.qwer@gmail.com:Kalejdoskop1',
-    'mnieckula@yahoo.com:graalfox87',
-    'krishmuttu9@gmail.com:Krishnam9',
-    'austincruz8@gmail.com:jarjarac8'];
+    var rand = ['trsak1@seznam.cz:skopekpetr1',
+    'skatingat:mqutcbmzze36',
+    'astrid.muehlberger@web.de:garfield16',
+    'mbowman435@gmail.com:icijuju3',
+    'akeyoshi.y@lion.ocn.ne.jp:Kuyt1013',
+    'joshua.william.lopez@gmail.com:U$8742253',
+    'simonandjane12@sky.com:engines1',
+    'daniil.shestakov.89@mail.ru:4545456qw',
+    'kevintecht@web.de:kevin95',
+    'adam@pyrusmalus.com:Adam6543',
+    'kashif1611@yahoo.com:daddy654',
+    'catcher1018@gmail.com:Ciro1234',
+    'bellabooedits@gmail.com:www56102',
+    'pburgess01@gmail.com:Burge55',
+    'tafinaz@gmail.com:xander03'];
 
     return rand[Math.floor(Math.random()*rand.length)];
 }
