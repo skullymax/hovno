@@ -83,7 +83,7 @@ client.on("message", async message => {
   }
 
   if(command === "generate") {
-    message.channel.send("**The bot is now updating it take 1-3Hours...Try again later!**");
+    message.channel.send("**The bot is now updating it take 30minutes...Try again later!**");
 
   }
 
