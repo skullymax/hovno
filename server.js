@@ -83,9 +83,7 @@ client.on("message", async message => {
   }
 
   if(command === "generate") {
-    message.channel.send("**Generating...**");
-      message.author.send(doMagic8BallVoodoo());
-      message.author.send("Join to official discord https://discord.gg/VAwQKQG");
+    message.channel.send("**The bot is now updating...Try again later!**");
 
   }
 
