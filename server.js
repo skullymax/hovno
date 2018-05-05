@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var fs = require('fs');
 
 const config = require("./config.json");
 
@@ -16,7 +15,7 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.user.setActivity(`/help | ${client.guilds.size} servers`);
+  client.user.setActivity(`Serving ${client.guilds.size} servers`);
 });
 
 function doMagic8BallVoodoo() {
@@ -108,7 +107,8 @@ client.on("message", async message => {
   if(command === "clear") {
 
     const deleteCount = parseInt(args[0], 10);
-
+    if(!message.member.roles.some(r=>["clear"].includes(r.name)) )
+      return message.reply("Sorry, you don't have permissions to use this! **MAKE SURE YOU HAVE ROLE 'clear'**");
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
       return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
 
